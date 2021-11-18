@@ -1,4 +1,4 @@
-package web.model;
+package com.example.springboot311.model;
 
 import org.springframework.security.core.GrantedAuthority;
 

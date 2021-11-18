@@ -1,6 +1,6 @@
-package web.service;
+package com.example.springboot311.service;
 
-import web.model.Role;
+import com.example.springboot311.model.Role;
 
 import java.util.HashSet;
 import java.util.List;

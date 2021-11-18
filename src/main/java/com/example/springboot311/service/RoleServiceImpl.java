@@ -1,9 +1,9 @@
-package web.service;
+package com.example.springboot311.service;
 
+import com.example.springboot311.dao.RoleDAO;
+import com.example.springboot311.model.Role;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import web.dao.RoleDAO;
-import web.model.Role;
 
 import java.util.HashSet;
 import java.util.List;

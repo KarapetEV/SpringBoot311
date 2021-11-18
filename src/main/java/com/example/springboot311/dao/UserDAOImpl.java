@@ -1,9 +1,8 @@
-package web.dao;
+package com.example.springboot311.dao;
 
+import com.example.springboot311.model.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
-import web.model.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

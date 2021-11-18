@@ -1,13 +1,11 @@
-package web.service;
+package com.example.springboot311.service;
 
+import com.example.springboot311.dao.UserDAO;
+import com.example.springboot311.model.User;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import web.dao.UserDAO;
-import web.dao.UserDAOImpl;
-import web.model.User;
 
-import java.sql.SQLException;
 import java.util.List;
 
 @Service

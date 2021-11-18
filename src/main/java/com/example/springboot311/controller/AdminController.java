@@ -1,12 +1,12 @@
-package web.controller;
+package com.example.springboot311.controller;
 
+import com.example.springboot311.model.User;
+import com.example.springboot311.service.RoleService;
+import com.example.springboot311.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import web.model.User;
-import web.service.RoleService;
-import web.service.UserService;
 
 @Controller
 @RequestMapping("/admin")
@@ -33,7 +33,7 @@ public class AdminController {
         User user = userService.getUser(id);
         model.addAttribute("user", user);
         model.addAttribute("roles", user.getRoles());
-        return "admin/showForAdmin";
+        return "user/showUser";
     }
 
     @GetMapping("/new")

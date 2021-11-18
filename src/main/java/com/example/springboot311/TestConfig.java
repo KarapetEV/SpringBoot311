@@ -1,29 +1,29 @@
-package web.config;
+package com.example.springboot311;
 
+import com.example.springboot311.model.Role;
+import com.example.springboot311.model.User;
+import com.example.springboot311.service.RoleService;
+import com.example.springboot311.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import web.model.Role;
-import web.model.User;
-import web.service.RoleService;
-import web.service.UserService;
 
 import javax.annotation.PostConstruct;
 import java.util.HashSet;
 import java.util.Set;
 
 @Component
-public class TestData {
+public class TestConfig {
 
     private final UserService userService;
     private final RoleService roleService;
 
     @Autowired
-    public TestData(UserService userService, RoleService roleService) {
+    public TestConfig(UserService userService, RoleService roleService) {
         this.userService = userService;
         this.roleService = roleService;
     }
 
-
+    @PostConstruct
     public void insertData() {
 
 //        Role roleAdmin = new Role("ROLE_ADMIN");

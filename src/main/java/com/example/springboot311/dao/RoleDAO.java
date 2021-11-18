@@ -1,7 +1,6 @@
-package web.dao;
+package com.example.springboot311.dao;
 
-import web.model.Role;
-import web.model.User;
+import com.example.springboot311.model.Role;
 
 import java.util.HashSet;
 import java.util.List;
